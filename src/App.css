@@ -1,38 +1,100 @@
+body {
+  background-color: #3e3d3d;
+  color: #fff;
+  font-family: Inter;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.baseCalci{
+  /* border: 1px solid #fff; */
+  width: 350px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 10px solid rgba(51, 51, 51, 0.60);
+  background: #151515;
+  box-shadow: 0px 4px 85px 42px rgba(0, 0, 0, 0.20);
+
+}
+input{
+  border: 3px solid rgba(51, 51, 51, 0.60);
+  border-radius: 30px;
+  background: #151515;
+  color: #fff;
+
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.mainCal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.display {
+  margin-top: 5rem;
+  font-size: 112px;
+  text-align: end;
+  overflow: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  /* gap: 20px; */
+}
+
+.row1,
+.row2,
+.row3,
+.row4 ,
+.row5{
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+
+.key {
+  width: 80px;
+  height: 80px;
+  font-size: 42px;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  background: #333;
+  border: 3px solid #333;
+  background: #333;
+  box-shadow: 4px 1px 17px 3px rgba(0, 0, 0, 0.22) inset;
+  font-weight: 400;
+  font-style: normal;
+}
+.merged{
+  width: 160px;
+  border-radius: 150px;
+}
+
+.last {
+  text-transform: none;
+  font-size: 62px;
+  background: radial-gradient(260.91% 260.91% at -0.00% -32.02%, #FAFF00 0%, #FF00F5 100%);
 }
