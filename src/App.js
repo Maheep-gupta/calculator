@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  /* eslint-disable */
   const [value, setValue] = useState('')
   const handleClick = (event) => {
     if (event.target.value === 'AC') {
